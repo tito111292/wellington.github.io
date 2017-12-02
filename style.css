@@ -1,0 +1,585 @@
+@font-face {
+    font-family:BankGothic Lt BT;
+    src: url(bank.ttf);
+}
+*{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+body{
+	background-image:url(background.png);
+	background-size:contain;
+}
+.total{
+	position:relative;
+	top:-21px;
+	height:1000px;
+}
+
+header{
+	position: fixed;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    z-index: 100000;
+    background-color: black;
+}
+
+
+header>.block-center{
+	width: 960px;
+    height: 67px;
+    position: relative;
+    top: -20px;
+    margin: 0 auto;
+}
+
+header>.block-center>figure{
+    width: 225px;
+    cursor:pointer;
+}
+header>.block-center>figure>h1{
+	position: relative;
+    top: 15px;
+	left:-40px;
+	text-transform: uppercase;
+	font-family: Colibri;
+    color: white;
+}
+header>.block-center>nav{
+	width: 570px;
+    height: 67px;
+    position: relative;
+    top: -58px;
+    left: 391px;
+}
+header>.block-center>nav>ul>li{
+	display:inline-block;
+	list-style:none;
+}
+
+header>.block-center>nav>ul>li>a{
+	    display: block;
+    padding: 25px 23px 24px 23px;
+    margin-right: -4px;
+    text-decoration: none;
+    font-family: BankGothic Lt BT;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(0,0,0);
+}
+
+header>.block-center>nav>ul>li>a:hover{
+	background-color:rgb(50,50,50);
+}
+main{
+	height: 471px;
+    position: relative;
+    top: -50px;
+	background-image:url(background.png);
+	background-size:content;
+	background-repeat:no-repeat;
+}
+main>.background-block{
+	width:980px;
+	height:315px;
+	position: relative;
+    top: 95px;
+	margin:0 auto;
+	margin-top:50px;
+	border-radius:10px;
+	 background-color:black;
+	 overflow:hidden;
+	 cursor:pointer;
+}
+
+
+
+main>.background-block:hover{
+	box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+main>.background-block>.view-port{
+	position: relative;
+	top:8px;
+	width:960px;
+	height:350px;
+	margin:0 auto;
+	overflow:hidden;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	 user-select:none;
+	 border-radius:10px;
+}
+
+main>.background-block>.view-port>.slide-wrapper{
+	width:10000px;
+	height:300px;
+	position:relative;
+	top:-16px;
+	left:-40px;
+	right:0;
+	bottom:0;
+	-webkit-transition: 1s;
+	transition:1s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	background-color:blue;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide{
+	display:inline-block;
+	height:300px;
+	width:960px;
+	list-style:none;
+	margin-right:-4px;
+	border-radius:10px;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide>.text-box{
+	position:relative;
+	top:-4px;
+	width:960px;
+	height:50px;
+}
+
+
+
+main>.background-block:hover{
+	height:370px;
+}
+
+
+
+main>.background-block>.view-port>.slide-wrapper>.slide>.text-box>span{
+	position: relative;
+    top: 2px;
+    left: 26px;
+    font-family: BankGothic Lt BT;
+    font-size: 17px;
+    color: white;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide>.text-box>.button-show{
+	padding: 2px 10px 2px 10px;
+	font-family:BankGothic Lt BT;
+	font-size:11px;
+	text-decoration:none;
+	background-color:white;
+	opacity:0.5;
+	color:black;
+}
+main>.background-block>.view-port>.slide-wrapper>.slide>.text-box>.button-show:hover{
+	opacity:1;
+	border-radius:5px;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide:first-child>.text-box>.pos{
+	position:relative;
+	top:25px;
+	left:-851px;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide:nth-child(2)>.text-box>.pos{
+	position:relative;
+	top:25px;
+	left:-695px;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide:nth-child(3)>.text-box>.pos{
+	position:relative;
+	top:25px;
+	left:-717px;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide:nth-child(4)>.text-box>.pos{
+	position:relative;
+	top:25px;
+	left:-742px;
+}
+
+main>.background-block>.view-port>.slide-wrapper>.slide:last-child>.text-box>.pos{
+	position:relative;
+	top:25px;
+	left:-702px;
+}
+
+main>.background-block>.prev-next-button{
+	position:relative;
+	top: -322px;
+	width:1100px;
+	height:300px;
+}
+
+main>.background-block>.prev-next-button>.prev-btn{
+	position: relative;
+    top: 106px;
+    left: 41px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background-color: white;
+    background-image: url(arrow-left.png);
+    background-size: contain;
+}
+
+main>.background-block>.prev-next-button>.next-btn{
+	position: relative;
+    top: 56px;
+    left: 885px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background-color: white;
+    background-image: url(arrow-right.png);
+    background-size: contain;
+}
+
+main>.background-block>.prev-next-button>.next-btn:hover{
+	opacity:1;
+}
+
+main>.background-block>.prev-next-button>.prev-btn:hover{
+	opacity:1;
+}
+
+article{
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: -53px;
+    background-image: url(bg.jpg);
+    background-position: 1px -285px;
+}
+
+article>.white-block{
+	position: relative;
+    top: 15px;
+    margin: 0 auto;
+    width: 980px;
+    height: 371px;
+    border-radius: 10px;
+}
+
+article>.name_of_block{
+	margin:0 auto;
+	position: relative;
+    top: 13px;
+    width: 980px;
+    height: 30px;
+    font-size: 24px;
+    font-family: BankGothic Lt BT;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+article>.name_of_block>span{
+	position:relative;
+    top: 0px;
+    left: 175px;
+}
+
+article>.white-block>.box-image{
+    display:flex;
+    position: relative;
+    left: 1px;
+    width: 393px;
+    height: 362px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+article>.white-block>.name_of_block1{
+    position: relative;
+    top: 13px;
+    left: 0px;
+    width: 397px;
+    height: 30px;
+    font-size: 24px;
+    font-family: BankGothic Lt BT;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+article>.white-block>.name_of_block1>.nav_span{
+    position: relative;
+    left: 42px;
+    font-size: 20px;
+}
+
+article>.white-block>.name_of_block2{
+    position: relative;
+    top: 43px;
+    left: 481px;
+    width: 498px;
+    height: 30px;
+    font-size: 22px;
+    font-family: BankGothic Lt BT;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+article>.white-block>.name_of_block2>.news_span{
+    position: relative;
+    left: 42px;
+    font-size: 20px;
+}
+
+article>.white-block>.box-image>.vertical-block{
+    display:block;
+    width: 90px;
+    height:360px;
+    overflow:hidden;
+    cursor:pointer;
+    border-radius: 10px;
+    position: relative;
+    left: -39px;
+    background-color:grey;
+}
+
+article>.white-block>.box-image>.vertical-block>.txt{
+   
+}
+
+article>.white-block>.box-image>.vertical-block:hover{
+    width:1000px;
+   
+    border-radius:10px;
+}
+
+article>.white-block>.box-image>.vertical-block:hover .txt1{
+    padding:8px 14px;
+     position:relative;
+    top: -173px;
+    left: -350px;
+    font-family:BankGothic Lt BT;
+    font-size:43px;
+    background-color:black;
+    color:white;
+    font-family:BankGothic Lt BT;
+}
+
+article>.white-block>.box-image>.vertical-block:hover .txt2{
+   padding: 8px 14px;
+    position: relative;
+    top: -173px;
+    left: -379px;
+    font-family: BankGothic Lt BT;
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    font-family: BankGothic Lt BT;
+}
+
+
+article>.white-block>.box-image>.vertical-block:hover .txt3{
+    padding:8px 14px;
+     position:relative;
+    top: -173px;
+    left: -308px;
+    font-family:BankGothic Lt BT;
+    font-size:43px;
+    background-color:black;
+    color:white;
+    font-family:BankGothic Lt BT;
+}
+
+article>.white-block>.box-image>.vertical-block:hover .txt4{
+    padding:8px 14px;
+     position:relative;
+    top: -173px;
+    left: -327px;
+    font-family:BankGothic Lt BT;
+    font-size:43px;
+    background-color:black;
+    color:white;
+    font-family:BankGothic Lt BT;
+}
+
+article>.white-block>.box-image>.vertical-block:hover .txt5{
+    padding:8px 14px;
+     position:relative;
+    top: -173px;
+    left: -327px;
+    font-family:BankGothic Lt BT;
+    font-size:43px;
+    background-color:black;
+    color:white;
+    font-family:BankGothic Lt BT;
+}
+article>.white-block>.box-image>.col1{
+	background-color:grey;
+    background-image:url(c1.jpg);
+}
+
+article>.white-block>.box-image>.col2{
+	background-image:url(c2.jpg);
+}
+
+article>.white-block>.box-image>.col3{
+	background-image:url(c3.jpg);
+}
+
+article>.white-block>.box-image>.col4{
+	background-image:url(c4.jpg);
+}
+
+article>.white-block>.box-image>.col5{
+	background-image:url(c5.png);
+}
+
+article>.white-block>.block-news{
+	position: relative;
+    top: -378px;
+    left: 480px;
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 13px;
+    cursor:pointer;
+}
+
+article>.white-block>.block-news>.img_news1{
+    position: relative;
+    left: 1px;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    background-image:url(img_news1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.block-news>.img_news2{
+    position: relative;
+    left: 1px;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    background-image:url(img_news2.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.block-news>.img_news3{
+    position: relative;
+    left: 1px;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    background-image:url(img_news3.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.block-news>.img_news4{
+    position: relative;
+    left: 1px;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    background-image:url(img_news4.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.block-news>.cont_news{
+    position:relative;
+    top: -80px;
+    left: 122px;
+    width: 377px;
+    height:80px;
+    font-size:14px;
+    font-style:BankGothic Lt BT;
+    color:white;
+}
+
+article>.white-block>.block-news>.cont_news>.inf{
+    position: relative;
+    top: 5px;
+    left: 11px;
+    font-family: BankGothic Lt BT;
+    font-size: 12px;
+}
+
+article>.white-block>.block-news>.cont_news>.but{
+    position: relative;
+    left: 185px;
+    top: 10px;
+    padding: 6px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    font-family: BankGothic Lt BT;
+    font-size: 11px;
+    background-color: black;
+}
+
+article>.white-block>.block-news>.cont_news>.but:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+}
+
+
+
+article>.white-block>.color1{
+	background-image: url(bg-fone.jpg);
+    background-size: 788px 393px;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.color2{
+	background-image: url(bg-fone.jpg);
+    background-size: 788px 393px;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.color3{
+	background-image: url(bg-fone.jpg);
+    background-size: 788px 393px;
+    background-repeat: no-repeat;
+}
+
+article>.white-block>.color4{
+	background-image: url(bg-fone.jpg);
+    background-size: 788px 393px;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    position: relative;
+    top: 146px;
+    left: 2px;
+    width: 1280px;
+    height: 28px;
+}
+
+.footer>.block-foot1{
+    position: relative;
+    top: 17px;
+    left: 64px;
+    display: inline-block;
+    width: 600px;
+    height: 21px;
+}
+
+.footer>.block-foot1>.foo{
+    position: relative;
+    left: 120px;
+    font-family:BankGothic Lt BT;
+    color:whitesmoke;
+    font-style: italic;
+}
+.footer>.block-foot1>.foo>a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer>.block-foot1>.foo>a:hover{
+    text-decoration: underline;
+}
